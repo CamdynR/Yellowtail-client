@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yellowtail</title>
+    
+    <!-- Stylesheet(s) -->
+    <link rel="stylesheet" type="text/css" href="../styles/popup.css" />
+  </head>
+  <body>
+    <div id="contentWrapper">
+      <header>
+        <h1>Start <span class="title">yellowtail</span></h1>
+      </header>
+  
+      <main>
+        <div id="btnWrapper">
+          <button id="joinBtn">Join Room</button>
+          <button id="createBtn" disabled="true" title="To create a room, please open a video on the crunchyroll website">Create Room</button>
+          <button id="leaveBtn" class="hidden">Leave Room</button>
+        </div>
+  
+        <form id="roomCodeForm" class="hidden">
+          <input id="roomCode" type="text" placeholder="Room Code" autocomplete="off" spellcheck="false">
+        </form>
+      </main>
+
+      <div id="modal" class="hidden">
+        <p></p>
+        <button class="hidden">Back</button>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../scripts/browser.js"></script>
+    <script src="../scripts/popup/popup-visuals.js"></script>
+    <script src="../scripts/popup/popup-main.js"></script>
+  </body>
+</html>

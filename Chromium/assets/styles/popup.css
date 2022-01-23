@@ -1,0 +1,273 @@
+/* Main Stylesheet */
+
+/* Poppins Font - Start */
+/* latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../components/assets/fonts/Poppins/Poppins-400-Latin.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../../components/assets/fonts/Poppins/Poppins-500-Latin.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* Poppins Font - End */
+
+/* Maven Pro Font - Start */
+/* latin */
+@font-face {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../components/assets/fonts/Maven_Pro/MavenPro-Regular400-Latin.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../../components/assets/fonts/Maven_Pro/MavenPro-Medium500-Latin.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../../components/assets/fonts/Maven_Pro/MavenPro-SemiBold600-Latin.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* Maven Pro Font - End */
+
+:root {
+  --bg-cancel-btn: #696969;
+  --bg-gray: #1a1a1a;
+  --bg-gray-input: #323232;
+  --bg-light-btn: rgb(216, 216, 216);
+  --core-text: #c8c8c8;
+  --core-orange: #f47825;
+  --placeholder-gray: #787878;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  align-items: center;
+  background-color: var(--bg-gray);
+  display: grid;
+  height: 100px;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+  width: 290px;
+}
+
+header h1 {
+  color: white;
+  font-family: "Maven Pro";
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+header .title {
+  color: var(--core-orange);
+  font-family: "Maven Pro";
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+main.roomCodeShowing {
+  display: grid;
+  grid-template-areas:
+    "buttons"
+    "roomCode";
+  height: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+body.roomCodeShowing {
+  height: 151px;
+}
+
+#btnWrapper {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-areas: "join create";
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+#btnWrapper.leaveRoom {
+  grid-template-areas: "leave";
+  grid-template-columns: 1fr;
+}
+
+#btnWrapper > button {
+  border: none;
+  border-radius: 3px;
+  color: var(--bg-gray);
+  font-size: 16px;
+  height: 30px;
+  transition: 0.05s ease all;
+}
+
+#btnWrapper > button:hover {
+  cursor: pointer;
+  filter: brightness(1.05);
+  transform: scale(1.02);
+  transition: 0.05s ease all;
+}
+
+#btnWrapper > button:active {
+  filter: brightness(1);
+  transform: scale(1);
+  transition: none;
+}
+
+#contentWrapper.roomCodeShowing {
+  grid-template-areas:
+    "title"
+    "rooms";
+  grid-template-rows: 41px 92px;
+}
+
+#createBtn {
+  background-color: var(--core-orange);
+  color: black;
+}
+
+#createBtn[disabled="true"] {
+  background-color: rgb(59, 59, 59);
+  color: white;
+  cursor: not-allowed !important;
+}
+
+#contentWrapper {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "rooms";
+  grid-template-rows: 41px 41px;
+  height: auto;
+  width: 90%;
+}
+
+#joinBtn {
+  background-color: var(--bg-light-btn);
+}
+
+#joinBtn.joinActive {
+  background-color: var(--bg-cancel-btn);
+  color: white;
+}
+
+#leaveBtn {
+  background-color: var(--bg-light-btn);
+}
+
+#modal {
+  align-items: center;
+  background-color: var(--bg-gray);
+  box-sizing: border-box;
+  display: grid;
+  grid-row-gap: 10px;
+  height: 100%;
+  justify-items: center;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#modal button {
+  background-color: rgb(59, 59, 59);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 3px 20px;
+  transition: 0.05s ease all;
+}
+
+#modal button:hover {
+  cursor: pointer;
+  filter: brightness(1.05);
+  transform: scale(1.02);
+  transition: 0.05s ease all;
+}
+
+#modal p {
+  color: var(--core-text);
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#roomCode {
+  align-self: center;
+  background-color: var(--bg-gray-input);
+  border: none;
+  border-radius: 1px;
+  box-sizing: border-box;
+  color: var(--core-text);
+  font-size: 14px;
+  letter-spacing: 1.3px;
+  margin: 2px 0 8px 0;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#roomCode:focus {
+  outline: none;
+}
+
+#roomCode::placeholder {
+  color: var(--placeholder-gray);
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+
+#roomCodeForm {
+  display: grid;
+  height: 100%;
+}

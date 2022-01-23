@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg2" inkscape:version="0.91 r13725" sodipodi:docname="logo.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 198 198"
+	 style="enable-background:new 0 0 198 198;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#3B3B3B;}
+	.st1{fill:#FFDD4A;}
+	.st2{font-family:'Poppins-SemiBold';}
+	.st3{font-size:154.5641px;}
+</style>
+<path class="st0" d="M178,198H20c-11,0-20-9-20-20V20C0,9,9,0,20,0h158c11,0,20,9,20,20v158C198,189,189,198,178,198z"/>
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1.0" fit-margin-bottom="0" fit-margin-left="0" fit-margin-right="0" fit-margin-top="0" id="base" inkscape:current-layer="layer1" inkscape:cx="529.60381" inkscape:cy="83.879223" inkscape:document-units="px" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:window-height="1053" inkscape:window-maximized="1" inkscape:window-width="1858" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:zoom="1" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<g>
+	<g id="layer1" transform="translate(-289.50849,319.17136)" inkscape:groupmode="layer" inkscape:label="Calque 1">
+		<g id="g4406" transform="matrix(0.4419355,0,0,0.4419355,-115.1012,-96.127872)">
+			<path id="path4379" inkscape:connector-curvature="0" class="st1" d="M1119.4-74.7c-7-0.7-25.5-3.9-32.4-5.6
+				c-59.3-15.1-109.5-55.7-136-110c-14.6-29.8-20.6-56.4-20.6-90.3c0-34,6.2-61.2,20.5-90.3c10.7-21.9,23.1-39,40.6-56.3
+				c32.8-32.4,74.3-52.5,121.3-58.7c15.4-2,47.9-1.4,62.3,1.3c29.9,5.4,56.7,16.1,80.7,32.1c49.9,33.3,82.3,84.1,90.7,142.6
+				c1.8,12.5,2.9,38.5,1.6,40.7c-0.7,1.2-1-0.1-1.4-5.2c-2.2-25.5-13.2-56.3-28.4-79.4c-46.2-70.1-132.5-99.8-212.4-73.2
+				c-61.7,20.5-108,72.7-120.7,135.8c-6.3,31.2-4.4,61.8,5.7,92c17.8,53.3,60.3,95.8,114.2,114.3c12.7,4.4,29.1,8,39.8,8.9
+				c12.9,1,9.6,2-6.3,1.9C1130-74.3,1121.3-74.5,1119.4-74.7L1119.4-74.7z"/>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 62.9462 169.4453)" class="st1 st2 st3">Y</text>
+</g>
+</svg>
